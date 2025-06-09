@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class aula000 {
+public class aula000_Processamento {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);

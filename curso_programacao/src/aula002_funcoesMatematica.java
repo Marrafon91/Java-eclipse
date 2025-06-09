@@ -1,5 +1,5 @@
 
-public class aula003 {
+public class aula002_funcoesMatematica {
 
 	public static void main(String[] args) {
 		double x = 3.0;
