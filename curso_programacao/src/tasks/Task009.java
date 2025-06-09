@@ -20,11 +20,7 @@ public class Task009 {
 			System.out.println("São Multiplos");						
 		} else {
 			System.out.println("Não são Multiplos");
-		}
-		
-		
-		
-		
+		}		
 		sc.close();
 	}
 
