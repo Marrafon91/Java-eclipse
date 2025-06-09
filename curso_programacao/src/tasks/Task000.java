@@ -3,7 +3,7 @@ package tasks;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Taks002 {
+public class Task000 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);		
