@@ -14,14 +14,11 @@ public class Task008 {
 		
 		N = sc.nextInt();
 		
-		if(N  %2 == 0) {
+		if(N  % 2 == 0) {
 			System.out.println("Numero PAR!");
 		} else {
 			System.out.println("Numero IMPAR!");
 		}
-		
-		
-		
 		
 		sc.close();
 
