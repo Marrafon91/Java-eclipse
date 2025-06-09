@@ -19,7 +19,7 @@ public class Task005 {
 		codigo1 = sc.nextInt();
 		quantidade1 = sc.nextInt();
 		preco1 = sc.nextDouble();
-		
+				
 		codigo2 = sc.nextInt();
 		quantidade2 = sc.nextInt();
 		preco2 = sc.nextDouble();
@@ -27,11 +27,7 @@ public class Task005 {
 		resultado = quantidade1 * preco1 + quantidade2 * preco2;
 		
 		System.out.printf("Valor a Pagar: %.2f%n", resultado);
-		
-		
-		
-		
-		
+				
 		sc.close();
 	}
 
