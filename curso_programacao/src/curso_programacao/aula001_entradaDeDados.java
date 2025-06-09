@@ -1,3 +1,4 @@
+package curso_programacao;
 import java.util.Scanner;
 
 public class aula001_entradaDeDados {

@@ -1,3 +1,4 @@
+package curso_programacao;
 
 public class aula002_funcoesMatematica {
 
