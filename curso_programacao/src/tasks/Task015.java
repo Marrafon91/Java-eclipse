@@ -14,10 +14,7 @@ public class Task015 {
 //	impressa a mensagem "Acesso Permitido" e o algoritmo encerrado. Considere que a senha correta é o valor 2002.
 		
 		int senha = sc.nextInt();
-		
-		
-		
-		
+				
 		while(senha != 2002) {
 			System.out.println("Senha invalida.");
 			senha = sc.nextInt();						
