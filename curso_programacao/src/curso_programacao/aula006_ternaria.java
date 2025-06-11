@@ -14,8 +14,7 @@ public class aula006_ternaria {
 		double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
 		
 		System.out.printf("Desconto: %.2f%n", desconto);
-		
-		
+				
 		sc.close();
 	}
 	
