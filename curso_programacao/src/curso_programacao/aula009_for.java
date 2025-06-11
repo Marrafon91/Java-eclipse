@@ -19,11 +19,7 @@ public class aula009_for {
 //		for(int i = 10;i >= 0;i--) {
 //			System.out.println(i);
 //		}
-			
-		
-		
 		System.out.println("Soma dos numeros = " + soma);		
-		
 		sc.close();
 	}
 
