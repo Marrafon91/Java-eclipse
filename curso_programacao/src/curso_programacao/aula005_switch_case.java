@@ -41,7 +41,6 @@ public class aula005_switch_case {
 		
 		System.out.println("Dia da semana: = " + dia);
 		sc.close();
-
 	}
 
 }
