@@ -14,11 +14,9 @@ public class Task023 {
 		
 		for(int i = 1; i <= n; i++) {
 			if(n % i == 0) {
-				System.out.println("Seus divisores = " + i);
+				System.out.println("Seus divisores são: " + i);
 			}
 		}
-		
-		
 		
 		sc.close();
 	}
