@@ -17,12 +17,12 @@ public class Task020 {
 		
 		for(int i = 0;i < n; i++) {
 			
-			double a = sc.nextDouble();
-			double b = sc.nextDouble();
-			double c = sc.nextDouble();
-			double resultado = (a * 2.0 + b * 3.0 + c * 5.0) / 10.0;
+			double n1 = sc.nextDouble();
+			double n2 = sc.nextDouble();
+			double n3 = sc.nextDouble();
+			double resultado = (n1 * 2.0 + n2 * 3.0 + n3 * 5.0) / 10.0;
 			
-			System.out.printf("Sua media %.1f%n", resultado);
+			System.out.printf("Sua media: %.1f%n", resultado);
 			
 		} 
 		
