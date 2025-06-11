@@ -20,7 +20,7 @@ public class aula004_Atribuicao {
 		
 		System.out.printf("Valor a pagar: R$ %.2f%n", conta);
 		
-		sc.close();
+		sc.close();		
 	}
 
 }
