@@ -14,12 +14,9 @@ public class aula006_escopo {
 			 desconto = price * 0.1;
 		} else {
 			desconto = 0;
-		}
-		
-		
+		}		
 		
 		System.out.println(desconto);		
-		
 		
 		sc.close();
 	}
