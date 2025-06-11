@@ -20,9 +20,7 @@ public class Task024 {
 			int primeiro = i;
 			int segundo = i * i;
 			int terceiro = i * i * i;
-			System.out.printf("saida: %-5d saida: %-7d saida: %-10d%n", primeiro, segundo, terceiro);
-
-			
+			System.out.printf("saida: %-5d saida: %-7d saida: %-10d%n", primeiro, segundo, terceiro);			
 		}
 		
 		sc.close();
