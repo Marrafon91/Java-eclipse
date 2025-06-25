@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.CurrencyConverter;
+import entities.Currencychage;
 
 public class MoneyChange {
 
@@ -12,12 +12,12 @@ public class MoneyChange {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("What is the dollar price? ");
-		CurrencyConverter.dollarPrice = sc.nextDouble();
+		Currencychage.dollarPrice = sc.nextDouble();
 		
 		System.out.print("How many dollars will be bought? ");		
-		CurrencyConverter.amountDollar = sc.nextDouble();
+		Currencychage.amountOfDollar = sc.nextDouble();
 		
-		double iof = CurrencyConverter.currencyChange(6.0);
+		double iof = Currencychage.currencyWithIof(6.0);
 		System.out.printf("Amount to be paid in R$ = %.2f%n", iof);
 		
 		sc.close();
