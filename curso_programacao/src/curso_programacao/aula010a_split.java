@@ -1,6 +1,6 @@
 package curso_programacao;
 
-public class aula010a_string {
+public class aula010a_split {
 
 	public static void main(String[] args) {
 		
