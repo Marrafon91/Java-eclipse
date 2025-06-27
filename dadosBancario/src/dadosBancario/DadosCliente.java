@@ -34,7 +34,7 @@ public class DadosCliente {
 
 		// Exibe dados iniciais
 		System.out.println("\nDados da conta:");
-		System.out.printf("Conta: %d, Nome: %s, Balanço: $ %.2f%n", cliente.getConta(), cliente.getName(),
+		System.out.printf("Conta: %d, Nome: %s, Balanço: R$ %.2f%n", cliente.getConta(), cliente.getName(),
 				cliente.getSaldo());
 
 		// DEPÓSITO
@@ -43,7 +43,7 @@ public class DadosCliente {
 		cliente.addDeposito(deposito);
 
 		System.out.println("Atualização da conta após depósito:");
-		System.out.printf("Conta: %d, Nome: %s, Balanço: $ %.2f%n", cliente.getConta(), cliente.getName(),
+		System.out.printf("Conta: %d, Nome: %s, Balanço: R$ %.2f%n", cliente.getConta(), cliente.getName(),
 				cliente.getSaldo());
 
 		// SAQUE
@@ -52,8 +52,9 @@ public class DadosCliente {
 		cliente.realizarSaque(saque);
 
 		System.out.println("Atualização da conta após saque:");
-		System.out.printf("Conta: %d, Nome: %s, Balanço: $ %.2f%n", cliente.getConta(), cliente.getName(),
+		System.out.printf("Conta: %d, Nome: %s, Balanço: R$ %.2f%n", cliente.getConta(), cliente.getName(),
 				cliente.getSaldo());
+		System.out.print("\nTaxa de 5R$ cobrada por cada saque.");
 
 		sc.close();
 	}
