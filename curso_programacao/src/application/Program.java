@@ -10,6 +10,8 @@ public class Program {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		
+	//	Product p = new Product(); ( onstrutor padrao)
 
 		System.out.println("Enterproductdata: ");
 		System.out.print("Name: ");
@@ -19,6 +21,11 @@ public class Program {
 //		System.out.print("Quantityin stock: ");
 //		int quantity = sc.nextInt();
 		Product product = new Product(name, price);
+		
+		product.setName("Computer");
+		System.out.println("Update name: " + product.getName());
+		product.setPrice(1200.00);
+		System.out.println("Updated price: " + product.getPrice());
 
 		System.out.println();
 		System.out.println("Productdata: " + product);
