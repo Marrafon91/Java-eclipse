@@ -29,14 +29,14 @@ public class Program {
 		product.addProducts(quantity);
 
 		System.out.println();
-		System.out.println("Updateddata: " + product);
+		System.out.println("Updated-data: " + product);
 		System.out.println();
 		System.out.print("Enter the number of products to be removed from stock: ");
 
 		quantity = sc.nextInt();
 		product.removeProducts(quantity);
 		System.out.println();
-		System.out.println("Updateddata: " + product);
+		System.out.println("Updated-data: " + product);
 
 		sc.close();
 	}
