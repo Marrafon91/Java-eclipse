@@ -11,11 +11,9 @@ public class aula016forEach {
 		
 		String[] vect = new String[] {"Maria", "Bob", "Guilherme"};
 		
-		for(String vet : vect) {
-			System.out.println(vet);
-		}
-		
+		for(String obj : vect) {
+			System.out.println(obj);
+		}		
 		sc.close();
 	}
-
 }
