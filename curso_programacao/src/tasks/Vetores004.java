@@ -18,7 +18,6 @@ public class Vetores004 {
 			System.out.print("Digite um numero: ");
 			vet[i] = sc.nextInt();
 		}
-
 		System.out.println("\nNUMEROS PARES:");
 
 		int pares = 0;
@@ -32,7 +31,5 @@ public class Vetores004 {
 		System.out.print("\nQUANTIDADE DE  PARES =  " + pares);
 
 		sc.close();
-
 	}
-
 }
