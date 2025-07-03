@@ -29,7 +29,6 @@ public class Vetores007 {
 
 		for (int i = 0; i < num.length; i++) {
 			if (num[i] < media) {
-
 				System.out.printf("%.1f%n", num[i]);
 			}
 		}
