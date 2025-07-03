@@ -32,10 +32,7 @@ public class Vetores010 {
 			if(media >= 6.0) {
 				System.out.printf("%s\n", nomes[i]);
 			}
-		}
-		
-		
-		
+		}		
 		sc.close();
 	}
 
