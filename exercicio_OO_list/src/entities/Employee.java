@@ -1,15 +1,14 @@
 package entities;
 
 public class Employee {
-	
+
 	private Integer id;
 	private String name;
 	private Double salary;
-	
-	
+
 	public Employee() {
 	}
-	
+
 	public Employee(Integer id, String name, Double salary) {
 		super();
 		this.id = id;
@@ -40,14 +39,14 @@ public class Employee {
 	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
-	
+
 	public void increaseSalary(double percentage) {
 		salary += salary * percentage / 100;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "id=" + id + ", name=" + name + ", " + String.format("%.2f", salary);
+		return "id = " + id + ", name = " + name + ", " + String.format("salary =  %.2f$", salary);
 	}
-	
+
 }
