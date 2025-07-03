@@ -33,9 +33,7 @@ public class Vetores009 {
 				posicao = i;
 			}
 		}
-
 		System.out.printf("PESSOA MAIS VELHA: %s\n", nomes[posicao]);
-
 		sc.close();
 	}
 
