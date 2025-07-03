@@ -54,7 +54,7 @@ public class Program {
 		}
 
 		System.out.println();
-		System.out.println("List od employees: ");
+		System.out.println("List of employees: ");
 		for (Employee e : list) {
 			System.out.println(e);
 		}
