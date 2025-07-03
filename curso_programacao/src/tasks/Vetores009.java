@@ -14,16 +14,27 @@ public class Vetores009 {
 
 		String[] nomes = new String[N];
 		int[] idades = new int[N];
-		
 
 		for (int i = 0; i < N; i++) {
 			System.out.printf("Dados da %da pessoa:\n", i + 1);
 			System.out.print("Nome: ");
-			nomes[i] = sc.next();
+			sc.nextLine();
+			nomes[i] = sc.nextLine();
 			System.out.print("Idade: ");
 			idades[i] = sc.nextInt();
-			
 		}
+
+		int maisVelho = idades[0];
+		int posicao = 0;
+
+		for (int i = 0; i < N; i++) {
+			if (idades[i] > maisVelho) {
+				maisVelho = idades[i];
+				posicao = i;
+			}
+		}
+
+		System.out.printf("PESSOA MAIS VELHA: %s\n", nomes[posicao]);
 
 		sc.close();
 	}
