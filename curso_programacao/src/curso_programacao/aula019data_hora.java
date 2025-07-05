@@ -44,7 +44,6 @@ public class aula019data_hora {
 		System.out.println("d09 = " + d09.toString());
 		System.out.println("d10 = " + d10.toString());
 		System.out.println("d11 = " + d11.toString());
-				
 		
 		sc.close();
 	}
