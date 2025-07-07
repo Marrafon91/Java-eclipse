@@ -8,7 +8,7 @@ import java.util.Locale;
 import java.util.Scanner;
 import java.util.TimeZone;
 
-public class aula023 {
+public class aula023data_hota_legado {
 
 	public static void main(String[] args) throws ParseException {
 		Locale.setDefault(Locale.US);
