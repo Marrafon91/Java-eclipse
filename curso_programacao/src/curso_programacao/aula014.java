@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Product014;
+import entity.Product014;
 
 public class aula014 {
 

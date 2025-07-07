@@ -3,7 +3,7 @@ package tasks;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Rent;
+import entity.Rent;
 
 public class VetoresPensionato {
 

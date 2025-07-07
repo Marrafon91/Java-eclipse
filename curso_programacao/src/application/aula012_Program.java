@@ -2,7 +2,8 @@ package application;
 
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Triangle;
+
+import entity.Triangle;
 
 public class aula012_Program {
 
