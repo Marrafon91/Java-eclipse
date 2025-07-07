@@ -28,5 +28,4 @@ public class Matriz004 {
 		System.out.println(soma);
 		sc.close();
 	}
-
 }
