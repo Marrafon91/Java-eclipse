@@ -33,14 +33,13 @@ public class aula026Upcasting_e_downcasting {
 			acc5.loan(200.0);
 			System.out.println("Loan!");
 		}
-		
-		if(acc3 instanceof SavingsAccount) {
-			SavingsAccount acc5 = (SavingsAccount)acc3;
+
+		if (acc3 instanceof SavingsAccount) {
+			SavingsAccount acc5 = (SavingsAccount) acc3;
 			acc5.updateBalance();
 			System.out.println("Update!");
 		}
-		
-		System.out.println(acc1);
+
 		sc.close();
 	}
 
