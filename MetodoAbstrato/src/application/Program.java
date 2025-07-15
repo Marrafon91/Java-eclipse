@@ -41,6 +41,13 @@ public class Program {
 
 		}
 
+		System.out.println();
+		System.out.println("SHAPE AREAS: ");
+
+		for (Shape shape : list) {
+			System.out.println(shape.area());
+		}
+
 		sc.close();
 	}
 
