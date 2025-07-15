@@ -6,7 +6,6 @@ public abstract class TaxPayer {
 	private Double anualIncome;
 
 	public TaxPayer() {
-		super();
 	}
 
 	public TaxPayer(String name, Double anualIncome) {
