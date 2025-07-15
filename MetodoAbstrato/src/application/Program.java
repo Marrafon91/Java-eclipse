@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Circle;
+import entities.Rectangle;
 import entities.Shape;
 import entities.enums.Color;
 
@@ -30,7 +32,11 @@ public class Program {
 				double width = sc.nextDouble();
 				System.out.print("Height: ");
 				double height = sc.nextDouble();
-
+				list.add(new Rectangle(color, width, height));
+			} else {
+				System.out.print("Radius: ");
+				double radius = sc.nextDouble();
+				list.add(new Circle(color, radius));
 			}
 
 		}
