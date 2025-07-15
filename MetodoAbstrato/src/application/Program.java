@@ -18,7 +18,7 @@ public class Program {
 
 		List<Shape> list = new ArrayList<>();
 
-		System.out.print("Enter the number od shapes: ");
+		System.out.print("Enter the number of shapes: ");
 		int n = sc.nextInt();
 
 		for (int i = 1; i <= n; i++) {
@@ -38,16 +38,13 @@ public class Program {
 				double radius = sc.nextDouble();
 				list.add(new Circle(color, radius));
 			}
-
 		}
-
 		System.out.println();
 		System.out.println("SHAPE AREAS: ");
 
 		for (Shape shape : list) {
 			System.out.println(String.format("%.2f", shape.area()));
 		}
-
 		sc.close();
 	}
 
