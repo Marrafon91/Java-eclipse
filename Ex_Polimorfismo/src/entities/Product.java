@@ -4,16 +4,15 @@ public class Product {
 
 	private String name;
 	private Double price;
-	private String priceTag;
 
 	public Product() {
 		super();
 	}
 
-	public Product(String name, Double price, String priceTag) {
+	public Product(String name, Double price) {
+		super();
 		this.name = name;
 		this.price = price;
-		this.priceTag = priceTag;
 	}
 
 	public String getName() {
@@ -32,15 +31,7 @@ public class Product {
 		this.price = price;
 	}
 
-	public String getPriceTag() {
-		return priceTag;
+	public String priceTag() {
+		return name + " $ " + String.format("%.2f", price);
 	}
-
-	public void setPriceTag(String priceTag) {
-		this.priceTag = priceTag;
-	}
-	
-	
 }
-
-	
