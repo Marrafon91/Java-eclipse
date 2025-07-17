@@ -9,7 +9,25 @@ public class aula028try_catch {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		
+		method1();
+		
+		System.out.println("End of Program");
+		
+		sc.close();
+	}
+	
+	public static void method1() {
+		System.out.println("***METHOD1 START***");
+		method2();
+		System.out.println("***METHOD1 END***");
+	}
 
+	public static void method2() {
+		System.out.println("***METHOD2 START***");
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
 		try {
 			String[] vect = sc.nextLine().split(" ");
 			int position = sc.nextInt();
@@ -19,9 +37,7 @@ public class aula028try_catch {
 		} catch (InputMismatchException e) {
 			System.out.println("Input error!");
 		}
-
-		System.out.println("End of Program");
 		sc.close();
+		System.out.println("***METHOD2 END***");
 	}
-
 }
