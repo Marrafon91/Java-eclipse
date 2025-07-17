@@ -34,6 +34,7 @@ public class aula028try_catch {
 			System.out.println(vect[position]);
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Invalid! position!");
+			e.printStackTrace();
 		} catch (InputMismatchException e) {
 			System.out.println("Input error!");
 		}
