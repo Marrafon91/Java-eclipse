@@ -5,6 +5,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
+import model.entities.CarrRental;
+import model.entities.Vehicle;
+
 public class Program {
 
 	public static void main(String[] args) {
@@ -20,6 +23,8 @@ public class Program {
 		LocalDateTime start = LocalDateTime.parse(sc.nextLine(), fmt);
 		System.out.print("Retorno (dd/MM/yyyy): ");
 		LocalDateTime finish = LocalDateTime.parse(sc.nextLine(), fmt);
+
+		CarrRental cr = new CarrRental(start, finish, new Vehicle(carrModel));
 
 		sc.close();
 	}
