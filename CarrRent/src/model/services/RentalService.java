@@ -1,5 +1,7 @@
 package model.services;
 
+import java.time.Duration;
+
 import model.entities.CarrRental;
 import model.entities.Invoice;
 
@@ -15,8 +17,19 @@ public class RentalService {
 		this.taxService = taxService;
 	}
 
-	public void precessInvoice(CarrRental carrRental) {
+	public void processInvoice(CarrRental carrRental) {
 
-		carrRental.setInvoice(new Invoice(50.0, 10.0));
+		double minutes = Duration.between(carrRental.getStart(), carrRental.getFinish()).toMinutes();
+		double hours = minutes / 60.0;
+
+		double basicPayment;
+		if (hours <= 12) {
+			basicPayment = pricePerHour * Math.ceil(hours);
+		} else {
+			basicPayment = pricePerDay * Math.ceil(hours / 24.0);
+		}
+
+		double tax = taxService.tax(basicPayment);
+		carrRental.setInvoice(new Invoice(basicPayment, tax));
 	}
 }
