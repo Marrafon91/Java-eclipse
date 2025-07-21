@@ -6,6 +6,8 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Contract;
+import entities.Installment;
+import services.ContractService;
 
 public class Program {
 
@@ -28,6 +30,15 @@ public class Program {
 
 		System.out.print("Entre com o numero de Parcelas: ");
 		int n = sc.nextInt();
+
+		ContractService contractService = new ContractService(null);
+
+		contractService.processContract(obj, n);
+
+		System.out.println("Parcelas: ");
+		for (Installment installment : obj.getInstallments()) {
+			System.out.println(installment);
+		}
 
 		sc.close();
 
