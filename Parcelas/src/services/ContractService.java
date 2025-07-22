@@ -23,6 +23,8 @@ public class ContractService {
 			double interest = onlinePaymentService.interest(basicQuota, i);
 			double fee = onlinePaymentService.paymentFee(basicQuota + interest);
 			double quota = basicQuota + interest + fee;
+
+			contract.getInstallments().add(new Installment(dueDate, quota));
 		}
 	}
 }
