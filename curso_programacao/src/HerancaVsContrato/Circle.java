@@ -1,8 +1,8 @@
 package HerancaVsContrato;
 
-import java.awt.Color;
+import HerancaVsContrato.enums.Color;
 
-public class Circle extends Shape {
+public class Circle extends AbstractShape {
 
 	private Double radius;
 
