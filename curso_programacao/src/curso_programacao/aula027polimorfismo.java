@@ -3,8 +3,8 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entity.Account;
-import entity.SavingsAccount;
+import entities.Account;
+import entities.SavingsAccount;
 
 public class aula027polimorfismo {
 

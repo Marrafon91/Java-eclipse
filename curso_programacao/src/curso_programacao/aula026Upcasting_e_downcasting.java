@@ -3,9 +3,9 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entity.Account;
-import entity.BusinessAccount;
-import entity.SavingsAccount;
+import entities.Account;
+import entities.BusinessAccount;
+import entities.SavingsAccount;
 
 public class aula026Upcasting_e_downcasting {
 
