@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-import services.PrintServiceString;
+import services.PrintService;
 
 public class aula039generics {
 
@@ -11,7 +11,7 @@ public class aula039generics {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		PrintServiceString ps = new PrintServiceString();
+		PrintService<String> ps = new PrintService<>();
 
 		System.out.print("How many value: ");
 		int n = sc.nextInt();
@@ -22,7 +22,8 @@ public class aula039generics {
 		}
 
 		ps.print();
-		System.out.println("Frist: " + ps.first());
+		String x = ps.first();
+		System.out.println("Frist: " + x);
 
 		sc.close();
 	}
