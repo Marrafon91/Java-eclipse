@@ -1,14 +1,14 @@
 package curso_programacao;
 
-import entities.Client;
+import entities.ClientHash;
 
 public class aula043HashCode_e_Equals {
 
 	public static void main(String[] args) {
 
 		// Criando dois objetos diferentes, mas com os mesmos dados
-		Client c1 = new Client("Maria", "maria@gmail.com");
-		Client c2 = new Client("Maria", "maria@gmail.com");
+		ClientHash c1 = new ClientHash("Maria", "maria@gmail.com");
+		ClientHash c2 = new ClientHash("Maria", "maria@gmail.com");
 
 		// Criando duas strings usando literais (constantes) - são internadas na memória
 		String s1 = "Test";

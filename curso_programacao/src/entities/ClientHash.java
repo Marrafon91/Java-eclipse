@@ -2,12 +2,12 @@ package entities;
 
 import java.util.Objects;
 
-public class Client {
+public class ClientHash {
 
 	private String name;
 	private String email;
 
-	public Client(String name, String email) {
+	public ClientHash(String name, String email) {
 		this.name = name;
 		this.email = email;
 	}
@@ -41,7 +41,7 @@ public class Client {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Client other = (Client) obj;
+		ClientHash other = (ClientHash) obj;
 		return Objects.equals(email, other.email) && Objects.equals(name, other.name);
 	}
 	
