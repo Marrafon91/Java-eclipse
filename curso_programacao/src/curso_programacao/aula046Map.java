@@ -3,7 +3,7 @@ package curso_programacao;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class aula046 {
+public class aula046Map {
 
 	public static void main(String[] args) {
 				
