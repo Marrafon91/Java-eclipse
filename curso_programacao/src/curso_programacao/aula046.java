@@ -26,9 +26,6 @@ public class aula046 {
 		
 		for(String key : cookies.keySet()) {
 			System.out.println(key + ": " + cookies.get(key));
-		}
-		
-		System.out.println("#####################\n");
-		
+		}		
 	}
 }
