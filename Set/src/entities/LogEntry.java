@@ -7,7 +7,7 @@ public class LogEntry {
 
 	private String userName;
 	private Date moment;
-	
+
 	public LogEntry(String userName, Date moment) {
 		this.userName = userName;
 		this.moment = moment;
@@ -46,10 +46,4 @@ public class LogEntry {
 		return Objects.equals(userName, other.userName);
 	}
 
-	@Override
-	public String toString() {
-		return "LogEntry userName = " + userName + ", moment = " + moment;
-	}
-	
-	
 }
