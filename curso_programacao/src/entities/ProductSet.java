@@ -2,13 +2,12 @@ package entities;
 
 import java.util.Objects;
 
-public class ProductSet {
+public class ProductSet implements Comparable<ProductSet> {
 
 	private String name;
 	private Double price;
 
 	public ProductSet(String name, Double price) {
-
 		this.name = name;
 		this.price = price;
 	}
@@ -44,6 +43,16 @@ public class ProductSet {
 			return false;
 		ProductSet other = (ProductSet) obj;
 		return Objects.equals(name, other.name) && Objects.equals(price, other.price);
+	}
+
+	@Override
+	public String toString() {
+		return "ProductSet Name = " + name + ", Price = " + price;
+	}
+
+	@Override
+	public int compareTo(ProductSet other) {
+		return name.toUpperCase().compareTo(other.getName().toUpperCase());
 	}
 
 }
