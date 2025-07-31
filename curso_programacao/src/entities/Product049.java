@@ -29,11 +29,15 @@ public class Product049 {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
-	
+
 	public static boolean staticProductPredicate(Product049 p) {
 		return p.getPrice() >= 100.0;
 	}
-	
+
+	public boolean nonStaticProductPredicate() {
+		return price >= 100.0;
+	}
+
 	@Override
 	public String toString() {
 		return name + ", $ " + String.format("%.2f", price);

@@ -18,8 +18,17 @@ public class aula049Predicate {
 		list.add(new Product049("Mouse", 50.00));
 		list.add(new Product049("Tablet", 350.00));
 		list.add(new Product049("HD Case", 80.90));
-
-		list.removeIf(Product049::staticProductPredicate);
+//		Static
+//		list.removeIf(Product049::staticProductPredicate);
+//		No Static		
+//		list.removeIf(Product049::nonStaticProductPredicate);
+//		Lambda 
+//		double min = 100.0;
+//		Predicate<Product049> pred = (p -> p.getPrice() >= min);
+//		list.removeIf(pred);
+//		Lambda in-line		
+		double min = 100.0;
+		list.removeIf(p -> p.getPrice() >= min);
 
 		for (Product049 p : list) {
 			System.out.println(p);
