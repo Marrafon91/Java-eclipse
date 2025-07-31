@@ -20,7 +20,8 @@ public class aula053Stream {
 		System.out.println(Arrays.toString(st3.limit(10).toArray()));
 
 		// Sequencia de Fibonati
-		Stream<Long> fibonati = Stream.iterate(new Long[] { 0L, 1L }, p -> new Long[] { p[1], p[0] + p[1] }).map(p -> p[0]);
+		Stream<Long> fibonati = Stream.iterate(new Long[] { 0L, 1L },
+		p -> new Long[] { p[1], p[0] + p[1] }).map(p -> p[0]);
 		System.out.println(Arrays.toString(fibonati.limit(20).toArray()));
 	}
 }
