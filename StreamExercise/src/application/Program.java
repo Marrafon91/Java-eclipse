@@ -24,43 +24,42 @@ public class Program {
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
 			List<Client> list = new ArrayList<>();
-
 			String line = br.readLine();
 
 			while (line != null) {
-				String[] fields = line.split(",");
-				String name = fields[0];
-				String email = fields[1];
-				Double salary = Double.parseDouble(fields[2]);
+				String[] campo = line.split(",");
+				String name = campo[0];
+				String email = campo[1];
+				Double salary = Double.parseDouble(campo[2]);
 
 				list.add(new Client(name, email, salary));
 
 				line = br.readLine();
 			}
-
-			System.out.print("Enter Salary: ");
-			double salary = sc.nextDouble();
-
-			@SuppressWarnings("unused")
-			List<Client> filteredClients = list.stream().filter(p -> p.getSalary() >= salary)
-					.collect(Collectors.toList());
-
-			System.out.printf("Email of people whose salary is more than %.2f:\n", salary);
-
-			list.stream().filter(e -> e.getSalary() >= salary)
-					.map(Client::getEmail).sorted()
-					.forEach(System.out::println);
-
-			double sum = list.stream().filter(c -> c.getName().startsWith("M"))
-					.mapToDouble(Client::getSalary).sum();
 			
-			System.out.printf("Sum of salary of people whose name starts with 'M': %.2f%n", sum);
-
+			System.out.print("Enter salary: ");
+			double salary = sc.nextDouble();
+			
+			List<String> emails = list.stream()
+					.filter(s -> s.getSalary() > salary)
+					.map(e -> e.getEmail())
+					.sorted()
+					.collect(Collectors.toList());
+			
+			System.out.println("Email of people whose salary is more than: " + String.format("$%.2f", salary));
+			emails.forEach(System.out::println);
+			
+			double soma = list.stream()
+					.filter(n -> n.getName().startsWith("M"))
+					.mapToDouble(Client::getSalary)
+					.sum();
+			
+			System.out.println("Sum of salary of people whose name starts with 'M': " + String.format("$%.2f", soma));
+			
+			
 		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
-
 		}
 		sc.close();
 	}
-
 }
