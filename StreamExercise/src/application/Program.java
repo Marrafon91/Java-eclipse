@@ -54,8 +54,7 @@ public class Program {
 					.mapToDouble(Client::getSalary)
 					.sum();
 			
-			System.out.println("Sum of salary of people whose name starts with 'M': " + String.format("$%.2f", soma));
-			
+			System.out.println("Sum of salary of people whose name starts with 'M': " + String.format("$%.2f", soma));			
 			
 		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
