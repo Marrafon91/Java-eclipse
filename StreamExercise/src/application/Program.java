@@ -47,10 +47,13 @@ public class Program {
 
 			System.out.printf("Email of people whose salary is more than %.2f:\n", salary);
 
-			list.stream().filter(e -> e.getSalary() >= salary).map(Client::getEmail).sorted()
+			list.stream().filter(e -> e.getSalary() >= salary)
+					.map(Client::getEmail).sorted()
 					.forEach(System.out::println);
 
-			double sum = list.stream().filter(c -> c.getName().startsWith("M")).mapToDouble(Client::getSalary).sum();
+			double sum = list.stream().filter(c -> c.getName().startsWith("M"))
+					.mapToDouble(Client::getSalary).sum();
+			
 			System.out.printf("Sum of salary of people whose name starts with 'M': %.2f%n", sum);
 
 		} catch (IOException e) {
